@@ -1,0 +1,20 @@
+{
+  "name": "OpenLibrary",
+  "version": "1.0.0",
+  "description": "Cypress with cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --spec \"**/*.feature\"",
+    "test:all": "cypress run --spec \"**/*.features\""
+  },
+  "author": "Giovani Silva",
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^2.5.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress": "^4.9.0"
+  }
+}
